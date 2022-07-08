@@ -12,7 +12,11 @@ WarmRoast is an easy-to-use CPU sampling tool for JVM applications, but particul
  * See the percentage of CPU time for each method relative to its parent methods.
  * Maintains style and function with use of "File -> Save As" (in tested browsers).
 
-**Download Latest Version:** http://builds.enginehub.org/job/warmroast/last-successful/
+### Download
+
+**Latest release**: [here](../../releases)
+
+**Latest build**: [here](../../actions/workflows/build.yml)
 
 Screenshots
 -----------
