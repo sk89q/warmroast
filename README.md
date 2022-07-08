@@ -14,8 +14,6 @@ WarmRoast is an easy-to-use CPU sampling tool for JVM applications, but particul
 
 **Download Latest Version:** http://builds.enginehub.org/job/warmroast/last-successful/
 
-Java 7 and above is required to use WarmRoast.
-
 Screenshots
 -----------
 
@@ -23,6 +21,14 @@ Screenshots
 
 Usage
 -----
+
+## For Java 9 and newer
+
+The `tools.jar` is automatically included into JDK's since Java 9. You only should use something like this:
+
+    java -cp warmroast-1.0.0-SNAPSHOT.jar com.sk89q.warmroast.WarmRoast --thread "Server thread"
+
+## For Java 7 & 8
 
 1. Note the path of your JDK.
 
