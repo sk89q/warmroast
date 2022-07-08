@@ -1,8 +1,8 @@
 name: Build
 
 on:
-  push:
-    branches: [ * ]
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -26,5 +26,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       name: Upload Artifact
       with:
-        name: ChatItem.jar
-        path: target/ChatItem-*.jar
+        name: WarmRoast
+        path: target/warmroast-*.jar
