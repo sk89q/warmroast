@@ -12,9 +12,11 @@ WarmRoast is an easy-to-use CPU sampling tool for JVM applications, but particul
  * See the percentage of CPU time for each method relative to its parent methods.
  * Maintains style and function with use of "File -> Save As" (in tested browsers).
 
-**Download Latest Version:** http://builds.enginehub.org/job/warmroast/last-successful/
+### Download
 
-Java 7 and above is required to use WarmRoast.
+**Latest release**: [here](../../releases)
+
+**Latest build**: [here](../../actions/workflows/build.yml)
 
 Screenshots
 -----------
@@ -23,6 +25,14 @@ Screenshots
 
 Usage
 -----
+
+## For Java 9 and newer
+
+The `tools.jar` is automatically included into JDK's since Java 9. You only should use something like this:
+
+    java -cp warmroast-1.0.0-SNAPSHOT.jar com.sk89q.warmroast.WarmRoast --thread "Server thread"
+
+## For Java 7 & 8
 
 1. Note the path of your JDK.
 
