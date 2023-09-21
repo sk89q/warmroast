@@ -1,7 +1,9 @@
 WarmRoast
 =========
 
-WarmRoast is an easy-to-use CPU sampling tool for JVM applications, but particularly suited for Minecraft servers/clients.
+*Note: This project is not actively maintained but should work. (2024)*
+
+WarmRoast attaches to Minecraft (or any Java application) and lets you see what it's doing. While what it's doing can be cryptic, with some practice, you can start to figure out patterns.
 
 * Adjustable sampling frequency.
 * Supports loading MCP mappings for deobfuscating class and method names.
@@ -14,9 +16,9 @@ WarmRoast is an easy-to-use CPU sampling tool for JVM applications, but particul
 
 ### Download
 
-**Latest release**: [here](../../releases)
+**Latest Release**: [here](../../releases)
 
-**Latest build**: [here](../../actions/workflows/build.yml)
+**Latest Build**: [here](../../actions/workflows/build.yml)
 
 Screenshots
 -----------
@@ -26,13 +28,15 @@ Screenshots
 Usage
 -----
 
-## For Java 9 and newer
+Extract the .zip file and place the .jar somewhere.
+
+### For Java 9 and newer ### 
 
 The `tools.jar` is automatically included into JDK's since Java 9. You only should use something like this:
 
     java -cp warmroast-1.0.0-SNAPSHOT.jar com.sk89q.warmroast.WarmRoast --thread "Server thread"
 
-## For Java 7 & 8
+### For Java 7 & 8 ### 
 
 1. Note the path of your JDK.
 
@@ -44,11 +48,11 @@ The `tools.jar` is automatically included into JDK's since Java 9. You only shou
 
 **Modded/vanilla servers:** If you are using a modded server, get a copy of [MCP](http://mcp.ocean-labs.de/index.php/MCP_Releases) for your server's Minecraft version, copy the files from conf/ somewhere, and point WarmRoast to it with `--mappings path/to/folder`. This helps readability a lot. Bukkit uses its own mapping, so a pure non-modded Bukkit server can't use MCP mappings.
 
-### Linux ###
+#### Linux ####
 
     java -Djava.library.path=PATH_TO_JDK/jre/bin -cp PATH_TO_JDK/lib/tools.jar:warmroast-1.0.0-SNAPSHOT.jar com.sk89q.warmroast.WarmRoast --thread "Server thread"
 
-### Windows ###
+#### Windows ####
 
 An example `PATH_TO_JDK` would be `C:\Program Files\Java\jdk1.7.0_45`
 
